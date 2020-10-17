@@ -4790,6 +4790,23 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
+@media Only screen and (max-width: 61.875em) {
+  #authors .card {
+    margin-bottom: 2rem; } }
+#authors img {
+  margin-top: -50px; }
+#authors .card:hover {
+  background-color: #3292a6;
+  color: #fff; }
+  #authors .card:hover .fab {
+    color: #fff; }
+@media Only screen and (max-width: 75em) {
+  #authors h3, #authors h5 {
+    font-size: 1rem; } }
+@media Only screen and (max-width: 75em) {
+  #authors h3, #authors h5 {
+    font-size: 1.25rem; } }
+
 .bg-primary {
   background-color: #007bff !important; }
 
@@ -5718,6 +5735,9 @@ body {
 
   .float-xl-none {
     float: none !important; } }
+.footer-bg {
+  background-color: #3292a6; }
+
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
   opacity: .9;
