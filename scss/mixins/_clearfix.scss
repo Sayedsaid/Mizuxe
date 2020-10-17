@@ -1,0 +1,33 @@
+// make transformation of 1em = 16px
+@mixin respond ($breakpoint) {
+  @if $breakpoint == phone {
+      @media Only screen and (max-width: 37.5em) { @content };   //600px
+  }
+
+  @if $breakpoint == mdscreen {
+    @media Only screen and (max-width: 48em) { @content };   //768px
+  }
+
+  @if $breakpoint == tab-port {
+      @media Only screen and (max-width: 56.25em) { @content };    //900px
+  }
+
+  @if $breakpoint == tab-land {
+      @media Only screen and (max-width: 75em) { @content };    //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+      @media Only screen and (min-width: 112.5em) { @content };    //1800px
+  }
+  
+}
+
+
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

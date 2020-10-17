@@ -1,0 +1,12 @@
+.btn-news {
+    background-color: $color-primary;
+    &:hover {
+        background-color: rgba($color-primary, .7);
+    }
+}
+
+.mp-resp {
+    @include respond(mdscreen) {
+        margin-bottom: 1rem;
+    }
+}

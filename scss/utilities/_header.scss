@@ -1,0 +1,12 @@
+.navbar {
+    box-shadow: 2px 2px 5px $color-primary;
+    opacity: .9;
+    background: #fff;
+
+    .nav-item {
+        font-size: 1.4rem;
+        &:not(:last-child) {
+            padding-right: 1.4rem;
+        }
+    }
+}
